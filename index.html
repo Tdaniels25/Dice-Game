@@ -12,36 +12,42 @@
 <body>
 	<div class="container">
 		<h1>Let's Play</h1>
-
-		<div class="dice">
-			<p class="Player1">Player 1</p>
-			<img class="img1" src="dice6.png">
+		<!-- Player 1 -->
+		<div class="dice player_active">
+		  <h2 class="player1">Player 1</h2>
+		  <p class="score" id="score_0">0</p>
+		  <div class="current">
+			<p class="current_label">Current</p>
+			<p class="current_score" id="current_0">0</p>
+		  </div>
+		  <img class="img1" src="dice6.png">
 		</div>
-
+		<!-- Player 2 -->
 		<div class="dice">
-			<p class="Player2">Player 2</p>
-			<img class="img2" src="dice6.png">
+		  <h2 class="player2">Player 2</h2>
+		  <p class="score" id="score_1">0</p>
+		  <div class="current">
+			<p class="current_label">Current</p>
+			<p class="current_score" id="current_1">0</p>
+		  </div>
 		</div>
-	</div>
-
-	<div class="container bottom">
-		<button type="button" class="butn"
-			onClick="rollTheDice()">
-			Roll the Dice
+	  </div>
+	  <!-- Buttons for the game -->
+	  <div class="container bottom">
+		<button type="button" class="butn butn_roll" onClick="rollTheDice()">
+		  Roll the Dice
 		</button>
-	</div>
-	<div class="container bottom">
-		<button type="button" class="butn"
-			onClick="changeNames()">
-			Change Names
+	  </div>
+	  <div class="container bottom">
+		<button type="button" class="butn btn_hold" onClick="hold()">
+		  Hold
 		</button>
-	</div>
-    <div class="container bottom">
-		<button type="button" class="butn"
-			onClick="newGame()">
-			New Game
+	  </div>
+	  <div class="container bottom">
+		<button type="button" class="butn butn_newgame" onClick="newGame()">
+		  New Game
 		</button>
-	</div>
+	  </div>
     <script src="index.js"></script>
 </body>
 
