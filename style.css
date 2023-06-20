@@ -53,3 +53,28 @@ img {
     background: #232931;
     text-decoration: none;
 }
+.img1{
+    padding: auto;
+    width: 100px;
+    height: 100px;
+}
+.current {
+    padding: auto;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+.score {
+    padding: auto;
+    width: 75px;
+    height: 65px;
+    background-color: black;
+}
+h2 {
+    margin: 20px;
+    
+    text-shadow: 5px 0 #232931;
+    font-size: 2.5rem;
+    color: #e2bb21;
+    text-align: center;
+}
